@@ -3213,7 +3213,7 @@ __metadata:
     react-native-safe-area-context: latest
     react-native-screens: latest
     react-native-swipe-list-view: latest
-    react-native-vector-icons: latest
+    react-native-vector-icons: ^10.1.0
     react-redux: latest
     react-test-renderer: 18.2.0
     typescript: 5.0.4
@@ -8484,7 +8484,7 @@ react-native-swipe-list-view@latest:
   languageName: node
   linkType: hard
 
-"react-native-vector-icons@latest, react-native-vector-icons@npm:^10.0.3":
+"react-native-vector-icons@npm:^10.0.3, react-native-vector-icons@npm:^10.1.0":
   version: 10.1.0
   resolution: "react-native-vector-icons@npm:10.1.0"
   dependencies:
