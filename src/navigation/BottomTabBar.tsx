@@ -1,11 +1,9 @@
 import {View, Text, TouchableOpacity} from 'react-native';
-import { Colors } from '../utils/Colors';
+import {Colors} from '../utils/Colors';
 import {moderateScale} from '../utils/Dimension';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 export function BottomTabBar({state, descriptors, navigation}: any) {
- 
-
   return (
     <View style={{flexDirection: 'row'}}>
       {state.routes.map((route: any, index: any) => {
@@ -43,35 +41,21 @@ export function BottomTabBar({state, descriptors, navigation}: any) {
             onLongPress={onLongPress}
             style={{
               flex: 1,
-              borderTopWidth:isFocused
-              ? 4
-              : 1,
+              borderTopWidth: isFocused ? 4 : 1,
               alignItems: 'center',
               justifyContent: 'flex-end',
               paddingBottom: 20,
               height: moderateScale(90),
-              borderTopColor: isFocused
-                ? Colors.purple
-                : Colors.grey,
-              backgroundColor: Colors.white,
+              borderTopColor: isFocused ? 'red' : 'white',
+              backgroundColor: 'white',
             }}>
-
-              <Icon name={options.tabBarIcon} size={27} color={isFocused? Colors.purple:Colors.darkGrey} style={{paddingBottom:8}}  />
-              <Text style={{color:isFocused?Colors.purple:Colors.darkGrey}} >{label}</Text>
-                <View
-                  style={{
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: moderateScale(20),
-                    height: moderateScale(20),
-                    borderRadius: 30,
-                    backgroundColor:'red',
-                    position:'absolute',
-                    top:20,
-                    right:20
-                  }}>
-                  <Text style={{color:Colors.white}}>{"0"}</Text>
-                </View>
+            <Icon
+              name={options.tabBarIcon}
+              size={27}
+              color={isFocused ? 'red' : 'white'}
+              style={{paddingBottom: 8}}
+            />
+            <Text style={{color: isFocused ? 'red' : 'white'}}>{label}</Text>
           </TouchableOpacity>
         );
       })}
