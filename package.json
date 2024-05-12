@@ -10,8 +10,26 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-native": "0.74.1"
+    "@react-native-async-storage/async-storage": "latest",
+    "@react-navigation/bottom-tabs": "latest",
+    "@react-navigation/native": "latest",
+    "@react-navigation/native-stack": "latest",
+    "@react-navigation/stack": "latest",
+    "@reduxjs/toolkit": "latest",
+    "axios": "latest",
+    "react": "latest",
+    "react-native": "latest",
+    "react-native-btr": "latest",
+    "react-native-gesture-handler": "latest",
+    "react-native-google-places-autocomplete": "latest",
+    "react-native-linear-gradient": "latest",
+    "react-native-maps": "latest",
+    "react-native-reanimated": "latest",
+    "react-native-safe-area-context": "latest",
+    "react-native-screens": "latest",
+    "react-native-swipe-list-view": "latest",
+    "react-native-vector-icons": "latest",
+    "react-redux": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -22,6 +40,7 @@
     "@react-native/metro-config": "0.74.83",
     "@react-native/typescript-config": "0.74.83",
     "@types/react": "^18.2.6",
+    "@types/react-native-vector-icons": "^6.4.18",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
     "eslint": "^8.19.0",
